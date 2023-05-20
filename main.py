@@ -1,3 +1,4 @@
+import os
 import random
 import string
 
@@ -28,12 +29,13 @@ passd = generate_password()
 
 #identifing the password to which it is being used
 identify = input("Enter the identification of these password to which it is being used : ")
-
+loc = os.getcwd()
 #saving generated password locally
 file_path = f"{identify}.txt"
 with open(file_path, 'w') as file:
     file.write(passd)
-    
+final_output = f"Find Your password for {identify} at {loc}\{file_path}\n"
+print(final_output)
 
-print(file_path)
+
 
