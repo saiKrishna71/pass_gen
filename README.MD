@@ -10,12 +10,14 @@ This repository contains a simple password generator with a graphical user inter
 1. Clone the repository to your local machine.
 2. Open a terminal or command prompt and navigate to the repository's directory.
 3. Run the following command to install the required libraries:
-
+```python
 pip install tkinter
+```
 
 4. Execute the following command to start the password generator:
-
+```bash
 python GUI/main.py
+```
 
 5. The password generator window will appear.
 6. Enter an identification for the password in the "Identification" field.
